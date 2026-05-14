@@ -17,6 +17,8 @@ This project is ready for a single Render Web Service deployment.
 4. Fill the secret environment variables when Render asks.
 5. Deploy.
 
+If your GitHub repository shows a top-level `JobPulse` folder instead of showing `package.json`, `render.yaml`, `server`, and `client` directly, set the Blueprint Path in Render to `JobPulse/render.yaml`.
+
 ## Page Reloads And Direct Links
 
 This repo is configured to avoid the common React Router refresh problem:

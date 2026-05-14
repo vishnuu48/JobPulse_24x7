@@ -3,6 +3,7 @@ services:
     name: jobpulse-24x7
     runtime: node
     plan: free
+    rootDir: JobPulse
     buildCommand: npm run render-build
     startCommand: npm start
     healthCheckPath: /api/health
