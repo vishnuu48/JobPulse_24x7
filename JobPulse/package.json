@@ -1,0 +1,23 @@
+{
+  "name": "jobshunt",
+  "version": "1.0.0",
+  "description": "A full-stack MERN job portal for Indian freshers",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "render-build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "seed": "cd server && npm run seed",
+    "start": "cd server && npm start"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "keywords": ["jobs", "portal", "mern", "fresher", "india"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
